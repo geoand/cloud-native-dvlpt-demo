@@ -29,7 +29,7 @@ oc new-project infra
 - Launch Jenkins
 
 ```bash
-oc new-app jenkins-persistent -n infra
+oc new-app jenkins-persistent -n infra -p MEMORY_LIMIT=768Mi
 ```
 
 We need the persistent Jenkins image because we will be making one change to Jenkins configuration
