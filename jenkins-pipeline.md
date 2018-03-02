@@ -45,11 +45,7 @@ oc adm policy add-cluster-role-to-user edit system:serviceaccount:infra:jenkins 
 From the Jenkins UI, Go to `Manage Jenkins` -> `Configure`.
 Under the `OpenShift Jenkins Sync` section, change the `Namespace` field to `demo`
 
-![](image/sync-namespace.png)
-
-- Restart Jenkins
-
-This can easily be done by scaling Jenkins down then up from the Openshift UI  
+![](image/sync-namespace.png)  
 
 
 - Deploy the jenkins `pipeline` using the `Jenkinsfile` part of the github `cloud-native-backend` project 
